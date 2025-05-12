@@ -32,8 +32,8 @@ def appRepoDetails = [
 
 // Define which applications belong to which environments
 def appEnvironments = [
-    'JAVA_APP_1': ['DEV', 'QA', 'LIVE'],
-    'JAVA_APP_2': ['QA', 'LIVE'],
+    'JAVA_APP_1': ['DEV', 'QA'],
+    'JAVA_APP_2': ['QA'],
     'JAVA_APP_3': ['DEV'],
     'JAVA_APP_4': ['QA', 'INT'],
 ]
