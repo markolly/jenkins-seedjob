@@ -8,7 +8,7 @@ def appEnvironments = config.appEnvironments
 def envVaults = config.envVaults
 def ldapCredentials = config.ldapCredentials
 
-def baseFolder = 'AWS_TOMCAT'
+def baseFolder = 'AWS TOMCAT'
 
 // Get the Seed Job name
 def seedJobName = Thread.currentThread()?.executable?.parent?.fullName ?: "UNKNOWN_SEED_JOB"
