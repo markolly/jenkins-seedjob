@@ -5,8 +5,8 @@ import com.cloudbees.hudson.plugins.folder.Folder
 def config = evaluate(new File("${WORKSPACE}/seed/config.groovy"))
 def appRepoDetails = config.appRepoDetails
 def appEnvironments = config.appEnvironments
-def envVaults = envVaults
-def ldapCredentials = ldapCredentials
+def envVaults = config.envVaults
+def ldapCredentials = config.ldapCredentials
 
 def baseFolder = 'AWS_TOMCAT'
 
