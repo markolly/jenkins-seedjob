@@ -32,26 +32,26 @@ def appRepoDetails = [
 
 // Define which applications belong to which environments
 def appEnvironments = [
-    'JAVA_APP_1': ['DEV', 'QA'],
-    'JAVA_APP_2': ['QA'],
-    'JAVA_APP_3': ['DEV', 'LIVE' ],
-    'JAVA_APP_4': ['QA', 'INT'],
+    'JAVA_APP_1': ['DEV', 'PREPROD'],
+    'JAVA_APP_2': ['PREPROD'],
+    'JAVA_APP_3': ['DEV', 'PROD' ],
+    'JAVA_APP_4': ['PREPROD', 'INT'],
 ]
 
 // Vault Mapping
 def envVaults = [
     'DEV': 'CIS-AWS-DevOps-Dev01',
     'INT': 'CIS-AWS-DevOps-Int',
-    'QA': 'CIS-AWS-DevOps-NonProd',
-    'LIVE': 'CIS-AWS-DevOps-Prod',
+    'PREPROD': 'CIS-AWS-DevOps-NonProd',
+    'PROD': 'CIS-AWS-DevOps-Prod',
 ]
 
 // LDAP Credentials Mapping (Environment -> 1Password Login Name)
 def ldapCredentials = [
     'DEV': 'ldap-awsdev01',
     'INT': 'ldap-awsint',
-    'QA': 'ldap-awspreprod',
-    'LIVE': 'ldap-awsprod',
+    'PREPROD': 'ldap-awspreprod',
+    'PROD': 'ldap-awsprod',
 ]
 
 return [appRepoDetails: appRepoDetails, appEnvironments: appEnvironments, envVaults: envVaults, ldapCredentials: ldapCredentials]
